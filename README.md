@@ -1,6 +1,8 @@
 # :money_with_wings: Blockchain for Beginners :money_with_wings:
 > tdlr: A responsive webpage that informs users about what is blockchain technology
 
+Check out the website [here](https://www.andrew.cmu.edu/user/zteoh)
+
 ## :rocket: Introduction
 
 I wanted to learn how to create websites and learn the nooks and crannies of HTML and CSS, which prompted me to work on a website. I chose to create a website on the topic of blockchain, targetting beginners.
