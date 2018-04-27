@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Bangers|Bungee+Shade|Carrois+Gothic|Germania+One|Squada+One|Zilla+Slab+Highlight');
+
 @media all and (min-width: 992px) { 
 	h1 {
 		font-size: 5em; /* 1.5x default size */
@@ -26,113 +28,94 @@
 		font-size: 1em;
 	}
 }
+
 @media all and (max-width: 768px) { /* screen size until 500px */
 	h1 {
 		font-size: 3em; /* 0.8x default size */
 	}
 	h2 {
-		font-size: 1.75em;
+		font-size: 2em;
 	}
 	h3{
-		font-size: 1.25em;
+		font-size: 1em;
 	}
 	p{
 		font-size: 1em;
+	}
+	button {
+		font-size: 5px;
 	}
 }
 
 
 body {
 	margin: 0;
-	background-color: lightblue;
+	background-color: white;
 	text-align: center;
 	margin-bottom: 40px;
 }
 
 h1 {
 	color : white;
-	font-family: Monaco, monospace;
+	font-family: 'Squada One', cursive;
 }
 
 h2 {
-	color: white;
-	font-family: Menlo;
+	color: darkred;
+	font-family: 'Germania One', cursive;
 }
 
 h3 {
-	color: white;
-	font-family: Menlo;
+	color: indianred;
+	font-family: 'Carrois Gothic', sans-serif;
+	text-align: center;
+}
+
+h3 p {
+	color: black;
+	font-family: 'Carrois Gothic', sans-serif;
+	text-align: justify
 }
 
 p {
-	color: midnightblue;
-	font-family: monospace;
+	font-family: 'Carrois Gothic', sans-serif;
+}
+
+button {
+	font-family: 'Carrois Gothic', sans-serif;
+	font-size: 1em;
 }
 
 table p {
-	color: midnightblue;
-	font-family: monospace;
+	color: black;
+	font-family: 'Carrois Gothic', sans-serif;
 	text-align: center;
 }
 
 ol li {
-	color: darkblue;
-	font-family: monospace;
+	color: black;
+	font-family: 'Carrois Gothic', sans-serif;
 }
 
 ol h2 li{
 	color: white;
-	font-family: Menlo;
+	font-family: 'Germania One', cursive;
 	text-align: justify;
 }
 
 ol h3 li{
 	color: dodgerblue;
-	font-family: monospace;
+	font-family: 'Germania One', cursive;
 	text-align: justify;
 }
 
 ::selection{
 	color: red;
-	background: yellow;
+	background: gainsboro;
 }
 
-/*#nav {
-transform: translateY(-100%);
-}*/
-
-#nav ul {
-	list-style-type: none;
-	margin: 0;
-	padding-left: 37.5%;
-	overflow: hidden;
-	background-color: steelblue;
-	position: fixed;
-	top: 0;
-	width: 100%;
-}
-
-#nav li {
-	float:left;
-	border-right: 1px solid skyblue;
-}
-
-#nav li:last-child {
-	border-right: none;
-}
-
-#nav li a {
-	font-family: Menlo;
-	font-size: 16px;
-	display: block;
-	color: dimgray;
-	text-align: center;
-	padding: 10px 10px;
-	text-decoration: none;
-}
-
-#nav li a.active {
-	color: white;
+.navbar {
+	font-family: 'Carrois Gothic', sans-serif;
 }
 
 /* Change the link color to white on hover */
@@ -157,7 +140,7 @@ in navigation bar */
 }
 
 #title li>a {
-	font-family: Menlo;
+	font-family: 'Germania One', cursive;;
 	display: block;
 	color: slategray;
 	text-align: center;
@@ -180,8 +163,12 @@ in navigation bar */
 	margin: 0px auto 0px auto;;
 }
 
+#box {
+	margin-bottom: 120px;
+}
+
 #title {
-	background-color: steelblue;
+	background-color: lightskyblue;
 	max-height: 100%;
 	width: 100%;
 	background-position: center;
@@ -248,7 +235,7 @@ table, th, td {
 
 td{
 	color: darkblue;
-	font-family: monospace;
+	font-family: 'Carrois Gothic', sans-serif;
 	font-size: 14px;
 	text-align: justify;
 	padding: 15px;
@@ -284,8 +271,9 @@ dl hr {
 	border-style: dashed;
 }
 
-#content > h2{
+#content h2{
 	background-color: tomato;
+	margin-bottom: 20px
 }
 
 #content h3>li{
@@ -298,6 +286,12 @@ tr>td>p {
 
 h3[target=_important] {
 	background-color: tomato;
+}
+
+.news .card {
+	margin-right: 0px;
+	padding-right: 0px;
+	
 }
 
 .videoWrapper {
@@ -315,17 +309,69 @@ h3[target=_important] {
 }
 
 mark {
-    background-color: yellowgreen;
-	color: midnightblue;
+    background-color: yellow;
+	color: darkblue;
 }
 
+.videos p {
+	margin: 30px;
+	margin-top: 10px;
+}
+
+.search {
+	margin-bottom: 30px;
+}
 footer{
 	position: fixed;
 	left: 0px;
 	bottom: 0px;
-	height: 25px;
+	height: 30px;
 	width: 100%;
-	background: mediumturquoise;
+	background: gainsboro;
+}
+
+footer p {
+	margin-top:5px;
+	text-align: center;
 	font-family: monospace;
-	color: #20B2AA;
+	color: grey;
+}
+
+/*FILTERING ELEMENTS*/
+.filterDiv {
+  float: left;
+  background-color: #2196F3;
+  color: #ffffff;
+  width: 100px;
+  line-height: 100px;
+  text-align: center;
+  margin: 2px;
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.container {
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
 }
