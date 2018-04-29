@@ -1,10 +1,15 @@
+jQuery.expr[':'].Contains = function(a, i, m) {
+ return jQuery(a).text().toUpperCase()
+     .indexOf(m[3].toUpperCase()) >= 0;
+};
+
 $('.searchbox-input').on('keyup',function () {
 //	console.log(filter);
 	$('.card').show();
 	var filter = $(this).val();
 	console.log(filter);
-	$('.definitions').find(".card-title:contains("+filter+ ")").parent().css('display','block')
-	$('.definitions').find(".card-title:not(:contains("+filter+ "))").parent().css('display','none');
+	$('.definitions').find(".card-title:Contains("+filter+ ")").parent().css('display','block')
+	$('.definitions').find(".card-title:not(:Contains("+filter+ "))").parent().css('display','none');
 });
 
 
@@ -143,3 +148,9 @@ function sortTable(n) {
     }
   }
 }
+
+
+
+
+
+

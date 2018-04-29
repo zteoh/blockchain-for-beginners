@@ -131,30 +131,76 @@
 
 					<table id="myTable">
 						<tr class="header">
-							<th onclick="sortTable(0)">Name</th>
-							<th onclick="sortTable(1)">Country</th>
+							<th onclick="sortTable(0)" style="width:40%;"><p>Term</p><h6>click to sort</h6></th>
+							<th onclick="sortTable(1)" style="width:60%;"><p>Definition</p><h6>click to sort</h6></th>
 						</tr>
 						<tr>
-							<td>Alfreds Futterkiste</td>
-							<td>Germany</td>
+							<td>Addresses</td>
+							<td>Addresses are used to receive and send transactions on the network. An address is a string of alphanumeric characters, but can also be represented as a scannable QR code.</td>
 						</tr>
 						<tr>
-							<td>Berglunds snabbkop</td>
-							<td>Sweden</td>
+							<td>Consensus Algorithm</td>
+							<td>A consensus algorithm ensures that the next block in a blockchain is the one and only version of the truth, and it keeps powerful adversaries from derailing the system and successfully forking the chain.The most widespread form of consensus algorithm is Bitcoin’s Proof of Work and involves contributing power in the form of computing capacity measured as hash rate. The most common alternative to POW of Proof of Stake. Other consensus algorithms include Proof of Activity, Proof of Burn, Proof of Capacity, Proof of Elapsed Time.</td>
 						</tr>
 						<tr>
-							<td>Zsland Trading</td>
-							<td>UK</td>
+							<td>Wallet</td>
+							<td>A wallet is a file that contains a collection of private keys.</td>
 						</tr>
 						<tr>
-							<td>Koniglich Essen</td>
-							<td>Germany</td>
+							<td>Digital Signature</td>
+							<td>Digital Signatures are a way to prove that somebody is who they say they are. A digital signature is a way to prove that a message originates from a specific person and no one else. When you visit a website, you are using SSL. This uses a digital signature to establish trust between you and the service.</td>
+						</tr>
+						<tr>
+							<td>Ledger</td>
+							<td>A ledger is an append-only record store, where records are immutable and may hold more general information than financial records.</td>
+						</tr>
+						<tr>
+							<td>Fork</td>
+							<td>A fork is the creation of an ongoing alternative version of the blockchain, by creating two blocks simultaneously on different parts of the network. This creates two parallel blockchains, where one of the two is the winning blockchain.</td>
+						</tr>
+						<tr>
+							<td>Encryption</td>
+							<td>Encryption is the process of turning a clear-text message (plaintext) into a data stream (cipher-text), which looks like a meaningless and random sequence of bits.</td>
+						</tr>
+						<tr>
+							<td>Open Source</td>
+							<td>Open source software is software with source code that anyone can inspect, modify, and enhance.</td>
+						</tr>
+						<tr>
+							<td>Solidity</td>
+							<td>Solidity is a contract-oriented programming language for writing smart contracts. It is used for implementing smart contracts on various blockchain platforms</td>
+						</tr>
+						<tr>
+							<td>Immutability</td>
+							<td>Immutability means a block cannot be modified after it is created. In Blockchain, blocks are chained together so that you can’t go back and change the contents of a block without having to change every subsequent block. Depending on the consensus protocol, you can’t change blocks without everyone else agreeing to it. This is sometimes referred to as “mutable by consensus”.</td>
+						</tr>
+						<tr>
+							<td>Initial Coin Offering (ICO)</td>
+							<td>Initial Coin Offering (ICO) is an event in which a new cryptocurrency sells advance tokens from its overall coinbase, in exchange for upfront capital. ICOs are frequently used for developers of a new cryptocurrency to raise capital.</td>
 						</tr>
 					</table>
 				</div>
 			</div>
+			
+		<div class="box">
+		<h2>I still have questions!</h2>
+			<form action="/action_page.php">
+  Name:
+  <input type="text" name="name" required>
+  <br>
+  Email:
+  <input type="text" name="email" required>
+  <br><br>
+				Question: <br>
+				<textarea style="height:100px; width:300px" required></textarea>
+				<br> <br>
+  <input type="submit" value="Submit">
+</form> 
 		</div>
-
+			
+		</div>
+		
+		
 		<script type="text/javascript" src="javascript.js"></script>
 	</body>
 	<footer> 
